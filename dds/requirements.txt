@@ -1,0 +1,30 @@
+# Diabetes Distress Scale - Production Requirements
+
+## Python Dependencies
+Flask==2.3.3
+Flask-CORS==4.0.0
+Werkzeug==2.3.7
+secrets  # Built-in
+
+## System Requirements
+- Python 3.8+
+- SQLite3 (built-in)
+- Node.js (for development)
+
+## Installation
+ ```bash
+pip install -r requirements.txt
+```
+
+## Environment Variables
+
+FLASK_ENV=production
+SECRET_KEY=your-secret-key-here
+DATABASE_URL=sqlite:///diabetes_distress.db
+
+
+## GitHub Pages Deployment
+This Flask application requires a server. For GitHub Pages, consider:
+1. Using GitHub Actions for deployment to hosting service
+2. Converting to static site if no backend needed
+3. Using serverless functions (AWS Lambda, Vercel, etc.)
